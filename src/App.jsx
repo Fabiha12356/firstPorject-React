@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import "./Components/Navbaar.jsx"
+import "./Components/Navbaar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
