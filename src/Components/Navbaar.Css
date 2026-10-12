@@ -2,9 +2,15 @@
     background-color: black;
     color: white;
 }
-.ulcss{
+nav ul li a {
     color: white !important;
 }
-nav ul li a {
-    color: white;
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 50px !important;
 }

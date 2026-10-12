@@ -33,7 +33,18 @@ import logo1 from "../assets/logoo.1.webp";
           <button className="btn line ulcss" type="submit">Get a Fiance</button>
         </div>
         <div>
-          <button className="btn line ulcss" type="submit">Online order</button>
+          <button className="btn line ulcss" type="submit" style={{
+            backgroundColor : "red"
+          }}>Online order
+            <i className="fa-solid fa-arrow-right"
+             style={{
+              color: "white",
+              backgroundColor : "black",
+              borderRadius : 10,
+              padding : "3px 2px",
+              marginLeft: "8px"
+             }}></i>
+          </button>
         </div>
       </div>
     </div>
