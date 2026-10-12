@@ -1,15 +1,18 @@
  import React from 'react'
  import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import "./Navbaar.Css"
+import logo from "../assets/logoo.webp";
+import logo1 from "../assets/logoo.1.webp";
 
  
  export const Navbaar = () => {
    return (
   <>
-   <nav className="navbar navbar-expand-lg bg-body-tertiary">
-    <div className="container-fluid px-5">
+   <nav className="navbar navbar-expand-lg nav-bg">
+    <div className="container-fluid px-5  nav-bg">
       <a className="navbar-brand" href="#">
-        <img src="" alt="img" /></a>
+        <img src={logo1} alt="img" width={100} /> </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -17,23 +20,20 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
       <div className="collapse navbar-collapse gap-5 text-center" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav ">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">About US</a>
+            <a className="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" href="#">Services</a>
+            <a className="nav-link active" href="#">About US</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" aria-disabled="true">Use Cases</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link active" aria-disabled="true">Pricing</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link active" aria-disabled="true">Blog</a>
+            <a className="nav-link active" aria-disabled="true">Publication</a>
           </li>
         </ul>
         <div>
-          <button className="btn line" type="submit">Request a quote</button>
+          <button className="btn line" type="submit">Get a Fiance</button>
+        </div>
+        <div>
+          <button className="btn line" type="submit">Online order</button>
         </div>
       </div>
     </div>
