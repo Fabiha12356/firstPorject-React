@@ -1,7 +1,7 @@
  import React from 'react'
  import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import "./Navbaar.Css"
+import "./Navbaar.css";
 import logo from "../assets/logoo.webp";
 import logo1 from "../assets/logoo.1.webp";
 
@@ -18,22 +18,22 @@ import logo1 from "../assets/logoo.1.webp";
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse gap-5 text-center" id="navbarSupportedContent">
-        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav ">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
+        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav">
+          <li className="nav-item ulcss">
+            <a className="nav-link active ulcss" aria-current="page" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" href="#">About US</a>
+            <a className="nav-link active ulcss" href="#">About US</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link active" aria-disabled="true">Publication</a>
+          <li className="nav-item ulcss">
+            <a className="nav-link active ulcss" >Publication</a>
           </li>
         </ul>
         <div>
-          <button className="btn line" type="submit">Get a Fiance</button>
+          <button className="btn line ulcss" type="submit">Get a Fiance</button>
         </div>
         <div>
-          <button className="btn line" type="submit">Online order</button>
+          <button className="btn line ulcss" type="submit">Online order</button>
         </div>
       </div>
     </div>

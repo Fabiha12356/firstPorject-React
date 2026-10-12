@@ -2,3 +2,9 @@
     background-color: black;
     color: white;
 }
+.ulcss{
+    color: white !important;
+}
+nav ul li a {
+    color: white;
+}
