@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Card.css"
  
 
 import card1 from "../assets/card1.webp"
@@ -8,14 +9,18 @@ import card4 from "../assets/card4.webp"
 
 export const Cards = () => {
   return (
-    <div className="container py-5">
-<h6>My SKills</h6>
-    <h1 style={{
-      paddingBottom: "25px",
-    }}>My Expertise</h1>
+    <div className="container-fulid py-5">
+            <h1>Welcome to Salt n Peper</h1>
+            <h1>Resturant! Our Brand</h1>
+            <h5>Please click our brands below for further information, reservations or to order online!</h5>
+  
 
 
-    <div className="row g-4">
+    <div className="row g-4 py-5 box"
+    style={{
+      border : "1px solid red",
+      width : "100%"
+    }}>
 
   
       <div className="col-12 col-sm-6 col-lg-3">
@@ -23,6 +28,7 @@ export const Cards = () => {
           <img src={card1} className="card-img-top mx-auto mt-3 w-50 " alt=""/>
         </div>
       </div>
+    
 
       <div className="col-12 col-sm-6 col-lg-3">
         <div className="card h-100 text-center bg-color">

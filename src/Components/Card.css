@@ -1,0 +1,19 @@
+.container-fulid{
+    background-color: black !important;
+    color:  white !important;
+    text-align: center !important;
+    overflow: hidden;
+}
+.box{
+    border: 1px solid purple !important;
+    width: 100% !important;
+    height: auto !important;
+}
+.box div{
+    border:  1px solid palevioletred !important;
+    height: 30vh !important;
+}
+ .box div img{
+  width: 100% !important;
+  height: 25vh !important;
+ }
