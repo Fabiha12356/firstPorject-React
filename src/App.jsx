@@ -6,11 +6,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import React from 'react'
 import Navbaar from './Components/Navbaar.jsx';
+import Carousal from './Components/carousal.jsx';
+
 
 export const App = () => {
   return (
     <>
   <Navbaar/>
+  <Carousal />
     </>
   )
 }

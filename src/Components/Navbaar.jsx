@@ -2,7 +2,6 @@
  import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "./Navbaar.css";
-import logo from "../assets/logoo.webp";
 import logo1 from "../assets/logoo.1.webp";
 
  
