@@ -1,13 +1,8 @@
-
 .carousel {
   width: 100%;
-  /* max-width: 1100px; */
-  margin: auto;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   height: auto;
-  /* border-radius: 15px;
-  box-shadow: 0 5px 20px #0002; */
 }
 
 .carousel input {
@@ -17,53 +12,44 @@
 .carousel-track {
   display: flex;
   width: 300%;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide {
   width: 33.333333%;
   flex-shrink: 0;
+  height: clamp(250px, 45vw, 550px);
   position: relative;
-  height: 500px;
+  overflow: hidden;
 }
 
 .slide img {
+  display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-.slide::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    transparent,
-    rgba(0, 0, 0, 0.65)
-  );
+  object-fit: contain;
 }
 
 .arrow {
   position: absolute;
   top: 50%;
-  z-index: 2;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  z-index: 2;
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   font-size: 20px;
-  transition: 0.3s;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .arrow:hover {
-  background: #a844ff;
+  background: black;
 }
 
 .prev {
@@ -72,26 +58,6 @@
 
 .next {
   right: 15px;
-}
-
-.dots {
-  position: absolute;
-  z-index: 3;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-
-.dots label {
-  width: 12px;
-  height: 12px;
-  background: white;
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: 0.3s;
 }
 
 /* Slide movement */
@@ -108,21 +74,40 @@
   transform: translateX(-66.666667%);
 }
 
-/* Active dot */
+/* Dots */
+
+.dots {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.dots label {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.65;
+}
 
 #slide1:checked ~ .dots label:nth-child(1),
 #slide2:checked ~ .dots label:nth-child(2),
 #slide3:checked ~ .dots label:nth-child(3) {
-  background: #a844ff;
+  background: black;
   opacity: 1;
   transform: scale(1.2);
 }
 
-/* Responsive design */
+/* Tablet */
 
 @media (max-width: 768px) {
-  .slide {
-    height: 350px;
+  .carousel {
+    border-radius: 10px;
   }
 
   .arrow {
@@ -140,20 +125,22 @@
   }
 }
 
+/* Mobile */
+
 @media (max-width: 480px) {
-  body {
-    padding: 15px 10px;
-  }
-
-  .carousel {
-    border-radius: 10px;
-  }
-
   .slide {
-    height: 260px;
+    height: 250px;
   }
+
+  .arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
   .dots {
-    bottom: 15px;
+    bottom: 12px;
+    gap: 8px;
   }
 
   .dots label {

@@ -6,47 +6,44 @@ import p3 from "../assets/p3.webp";
 
 export const Carousal = () => {
   return (
-      <div className="carousel">
+<div className="carousel">
 
-    <input type="radio" name="slide" id="slide1" defaultChecked />
-    <input type="radio" name="slide" id="slide2" />
-    <input type="radio" name="slide" id="slide3" />
+      <input type="radio" name="slide" id="slide1" defaultChecked />
+      <input type="radio" name="slide" id="slide2" />
+      <input type="radio" name="slide" id="slide3" />
 
-    <div className="carousel-track">
+      <div className="carousel-track">
 
-      <div className="slide">
-        <img src={p1} alt="Beautiful landscape"/>
+        <div className="slide">
+          <img src={p1} alt="Beautiful landscape" />
 
-    
-       <label htmlFor="slide2" className="arrow prev">❮</label>
-<label htmlFor="slide1" className="arrow next">❯</label>
+          <label htmlFor="slide3" className="arrow prev">❮</label>
+          <label htmlFor="slide2" className="arrow next">❯</label>
+        </div>
+
+        <div className="slide">
+          <img src={p2} alt="Mountain lake" />
+
+          <label htmlFor="slide1" className="arrow prev">❮</label>
+          <label htmlFor="slide3" className="arrow next">❯</label>
+        </div>
+
+        <div className="slide">
+          <img src={p3} alt="Beautiful mountains" />
+
+          <label htmlFor="slide2" className="arrow prev">❮</label>
+          <label htmlFor="slide1" className="arrow next">❯</label>
+        </div>
+
       </div>
 
-      <div className="slide">
-        <img src={p2} alt="Mountain lake"/>
-
-
-   <label htmlFor="slide2" className="arrow prev">❮</label>
-<label htmlFor="slide1" className="arrow next">❯</label>
-      </div>
-
-      <div className="slide">
-        <img src={p3} alt="Lake and mountains"/>
-       
- <label htmlFor="slide2" className="arrow prev">❯</label>
-<label htmlFor="slide1" className="arrow next">❮</label>
-
+      <div className="dots">
+        <label htmlFor="slide1"></label>
+        <label htmlFor="slide2"></label>
+        <label htmlFor="slide3"></label>
       </div>
 
     </div>
-
-    <div className="dots">
-      <label htmlFor="slide1"></label>
-      <label htmlFor="slide2"></label>
-      <label htmlFor="slide3"></label>
-    </div>
-
-  </div>
     
   )
 }
