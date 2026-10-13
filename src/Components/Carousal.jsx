@@ -8,7 +8,7 @@ export const Carousal = () => {
   return (
       <div className="carousel">
 
-    <input type="radio" name="slide" id="slide1" checked />
+    <input type="radio" name="slide" id="slide1" defaultChecked />
     <input type="radio" name="slide" id="slide2" />
     <input type="radio" name="slide" id="slide3" />
 
@@ -17,34 +17,33 @@ export const Carousal = () => {
       <div className="slide">
         <img src={p1} alt="Beautiful landscape"/>
 
-       
-
-        <label for="slide3" className="arrow prev">&#10094;</label>
-        <label for="slide2" className="arrow next">&#10095;</label>
+    
+       <label htmlFor="slide2" className="arrow prev">❮</label>
+<label htmlFor="slide1" className="arrow next">❯</label>
       </div>
 
       <div className="slide">
         <img src={p2} alt="Mountain lake"/>
 
 
-        <label for="slide1" className="arrow prev">&#10094;</label>
-        <label for="slide3" className="arrow next">&#10095;</label>
+   <label htmlFor="slide2" className="arrow prev">❮</label>
+<label htmlFor="slide1" className="arrow next">❯</label>
       </div>
 
       <div className="slide">
         <img src={p3} alt="Lake and mountains"/>
-
        
-        <label for="slide2" className="arrow prev">&#10094;</label>
-        <label for="slide1" className="arrow next">&#10095;</label>
+ <label htmlFor="slide2" className="arrow prev">❯</label>
+<label htmlFor="slide1" className="arrow next">❮</label>
+
       </div>
 
     </div>
 
     <div className="dots">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-      <label for="slide3"></label>
+      <label htmlFor="slide1"></label>
+      <label htmlFor="slide2"></label>
+      <label htmlFor="slide3"></label>
     </div>
 
   </div>
