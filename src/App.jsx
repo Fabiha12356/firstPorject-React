@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import React from 'react'
 import Navbaar from './Components/Navbaar.jsx';
 import Carousal from './Components/carousal.jsx';
+import Cards from './Components/Cards.jsx'
 
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
     <>
   <Navbaar/>
   <Carousal />
+  <Cards />
     </>
   )
 }
