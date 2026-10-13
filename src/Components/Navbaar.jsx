@@ -11,7 +11,7 @@ import logo1 from "../assets/logoo.1.webp";
    <nav className="navbar navbar-expand-lg nav-bg">
     <div className="container-fluid px-5  nav-bg">
       <a className="navbar-brand" href="#">
-        <img src={logo1} alt="img" width={100} /> </a>
+        <img src={logo1} alt="img" width={150} /> </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

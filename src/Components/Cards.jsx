@@ -16,31 +16,38 @@ export const Cards = () => {
   
 
 
-    <div className="row g-4 py-5 box"
-    style={{
-      border : "1px solid red",
-      width : "100%"
-    }}>
+    <div className="row g-4 py-5 box ms-1">
 
   
       <div className="col-12 col-sm-6 col-lg-3">
         <div className="card h-100 text-center bg-color">
           <img src={card1} className="card-img-top mx-auto mt-3 w-50 " alt=""/>
         </div>
+           <div className='py-3'>
+        <button>Order Now</button>
       </div>
+      </div>
+      
     
 
       <div className="col-12 col-sm-6 col-lg-3">
         <div className="card h-100 text-center bg-color">
           <img src={card2} className="card-img-top mx-auto mt-3 w-50" alt=""/>
         </div>
+           <div className='py-3'>
+        <button>Order Now</button>
       </div>
+      </div>
+     
 
 
       <div className="col-12 col-sm-6 col-lg-3">
         <div className="card h-100 text-center bg-color">
           <img src={card3} className="card-img-top mx-auto mt-3 w-50" alt=""/>
         </div>
+           <div className='py-3'>
+        <button>Order Now</button>
+      </div>
       </div>
 
 
@@ -48,6 +55,9 @@ export const Cards = () => {
         <div className="card h-100 text-center bg-color">
           <img src={card4} className="card-img-top mx-auto mt-3 w-50" alt=""/>
         </div>
+           <div className='py-3'>
+        <button>Order Now</button>
+      </div>
       </div>
 
     </div>

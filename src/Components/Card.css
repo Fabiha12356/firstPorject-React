@@ -5,15 +5,21 @@
     overflow: hidden;
 }
 .box{
-    border: 1px solid purple !important;
+    /* border: 1px solid purple !important; */
     width: 100% !important;
     height: auto !important;
 }
 .box div{
-    border:  1px solid palevioletred !important;
+    /* border:  1px solid palevioletred !important; */
     height: 30vh !important;
+
 }
  .box div img{
   width: 100% !important;
   height: 25vh !important;
+ }
+
+ .box div button{
+    width: 50%;
+    padding: 35px 25px ;
  }
