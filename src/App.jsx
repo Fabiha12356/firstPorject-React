@@ -17,7 +17,8 @@ export const App = () => {
   <Navbaar/>
   <Carousal />
   <Cards />
-  <Hero />
+  <Hero  condition = {true}  />
+  <Hero  condition = {false} />
     </>
   )
 }
