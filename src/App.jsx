@@ -42,13 +42,19 @@ export const App = () => {
   <Cards />
   <Hero  condition = {true}  />
   <Hero  condition = {false} />
-{
+
+<div style={{ display: "flex", flexWrap: "wrap", gap: "20px",  width: "100%",    margin: "0 auto",  overFlow : "hidden" ,
+  justifyContent : "center" , alignItems : "center",
+}}>
+  {
   cardData.map(({tittle,website,location,phoneNo}) =>{
- return <WrapCrads tittle={tittle} web={website} loc={location} ph={phoneNo} />
+  return <WrapCrads tittle={tittle} web={website} loc={location} ph={phoneNo} />
   })
 }
- 
+</div>
+
     </>
+  
   )
 }
 
