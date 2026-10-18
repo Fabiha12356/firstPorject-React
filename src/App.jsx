@@ -20,9 +20,10 @@ export const App = () => {
   <Cards />
   <Hero  condition = {true}  />
   <Hero  condition = {false} />
-  <WrapCrads  />
-  <WrapCrads />
-  <WrapCrads />
+  <WrapCrads  tittle={"sargodha"} web={"Salt'n Pepper Express"}  loc={" Opposite Sargodha Arts Council Babar Road"} ph={"Ph: 042-111-100-678"} />
+  <WrapCrads  tittle={"Jhelum"} web={"Salt'n Pepper Express"}  loc={"Opposite Dancing Fountain Gallery 2 Citi Housing Jhelum,"} ph={"Ph: 042-111-100-678"} />
+  <WrapCrads  tittle={"Faisal Town"} web={"Salt'n Pepper Express"}  loc={"34-C Abul Hassan Isfahani Rd, Faisal Town,Lahore"} ph={"Ph: 042-111-100-678"} />
+ 
     </>
   )
 }
