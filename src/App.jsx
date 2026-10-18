@@ -12,6 +12,28 @@ import Hero from './Components/Hero.jsx'
 import WrapCrads from './Components/Wrap.jsx'
 
 
+const cardData = [
+  {
+    tittle : "sargodha",
+    website : "Salt'n Pepper Express",
+    location: "Opposite Sargodha Arts Council Babar Road",
+    phoneNo : "Ph: 042-111-100-678",
+    Images : ""
+  },
+  { tittle : "Jhelum",
+    website : "Salt'n Pepper Express",
+    location: "Opposite Dancing Fountain Gallery 2 Citi Housing Jhelum,",
+    phoneNo : "Ph: 0307-7675555",
+    Images : ""},
+  {
+     tittle : "Faisal Town",
+    website : "Salt'n Pepper Express",
+    location: " 34-C Abul Hassan Isfahani Rd, Faisal Town,Lahore",
+    phoneNo : "Ph: 042-111-100-678",
+    Images : ""
+  },
+]
+
 export const App = () => {
   return (
     <>
@@ -20,9 +42,11 @@ export const App = () => {
   <Cards />
   <Hero  condition = {true}  />
   <Hero  condition = {false} />
-  <WrapCrads  tittle={"sargodha"} web={"Salt'n Pepper Express"}  loc={" Opposite Sargodha Arts Council Babar Road"} ph={"Ph: 042-111-100-678"} />
-  <WrapCrads  tittle={"Jhelum"} web={"Salt'n Pepper Express"}  loc={"Opposite Dancing Fountain Gallery 2 Citi Housing Jhelum,"} ph={"Ph: 042-111-100-678"} />
-  <WrapCrads  tittle={"Faisal Town"} web={"Salt'n Pepper Express"}  loc={"34-C Abul Hassan Isfahani Rd, Faisal Town,Lahore"} ph={"Ph: 042-111-100-678"} />
+{
+  cardData.map(({tittle,website,location,phoneNo}) =>{
+ return <WrapCrads tittle={tittle} web={website} loc={location} ph={phoneNo} />
+  })
+}
  
     </>
   )
