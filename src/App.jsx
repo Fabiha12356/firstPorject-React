@@ -32,6 +32,48 @@ const cardData = [
     phoneNo : "Ph: 042-111-100-678",
     Images : ""
   },
+  {
+     tittle : "DHA",
+    website : "Salt'n Pepper Express",
+    location: " 93-Y Phase III, DHA,Lahore",
+    phoneNo : "Ph: 042-111-100-678",
+    Images : ""
+  },
+  {
+     tittle : "Bahria Town",
+    website : "Salt'n Pepper Express",
+    location: "  Arwa Heights Building 19 Nishtar Block, Sector E, Bahria Town Lahore",
+    phoneNo : "Ph: 042-111-100-678",
+    Images : ""
+  },
+  {
+     tittle : "Gujar Khan",
+    website : "Salt'n Pepper Express",
+    location: " New Metro City Gujar Khan",
+    phoneNo : "Ph: 0321-1114965",
+    Images : ""
+  },
+  {
+     tittle : "Lahore",
+    website : "Salt'n Pepper Express",
+    location: " Shop no.5, Arcade Block, Fortress Stadium, Lahore",
+    phoneNo : "Ph: 042-366-23-100",
+    Images : ""
+  },
+  {
+     tittle : "Gujrat",
+    website : "Salt'n Pepper Express",
+    location: "  Service Mor, Gujrat",
+    phoneNo : "Gujrat",
+    Images : ""
+  },
+  {
+     tittle : "Sahiwal",
+    website : "Salt'n Pepper Express",
+    location: "Opposite Main Gate Police Line, Sahiwal",
+    phoneNo : "Ph: 040-4515485",
+    Images : ""
+  },
 ]
 
 export const App = () => {
