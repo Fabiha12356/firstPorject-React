@@ -9,6 +9,7 @@ import Navbaar from './Components/Navbaar.jsx';
 import Carousal from './Components/carousal.jsx';
 import Cards from './Components/Cards.jsx'
 import Hero from './Components/Hero.jsx'
+import WrapCrads from './Components/Wrap.jsx'
 
 
 export const App = () => {
@@ -19,6 +20,9 @@ export const App = () => {
   <Cards />
   <Hero  condition = {true}  />
   <Hero  condition = {false} />
+  <WrapCrads  />
+  <WrapCrads />
+  <WrapCrads />
     </>
   )
 }
