@@ -10,7 +10,7 @@ import Carousal from './Components/carousal.jsx';
 import Cards from './Components/Cards.jsx'
 import Hero from './Components/Hero.jsx'
 import WrapCrads from './Components/Wrap.jsx'
-
+import Franches  from './Components/Franches.jsx';
 
 const cardData = [
   {
@@ -77,6 +77,37 @@ const cardData = [
   },
 ]
 
+const Branches =[
+  {
+city : "Blue World City",
+name : "Rawalpindi"
+  },
+  {
+city : "Al-Jalil Garden",
+name : "Sharqpur"
+  },
+  {
+city : "Al-Jalil Garden",
+name : "Sadhoke"
+  },
+  {
+city : "Al-Jalil Garden",
+name : "Sheikhupura"
+  },
+  {
+city : "Al-Jalil Garden",
+name : "Kharian"
+  },
+  {
+city : "Al-Jalil Garden",
+name : "Okara"
+  },
+  {
+city : "Al-Jalil Garden",
+name : "Etihad Town, Lahore."
+  }
+]
+
 export const App = () => {
   return (
     <>
@@ -98,7 +129,17 @@ export const App = () => {
 </div>
  <Hero  condition = {true} name={"GUJRANWALA"}
   loc={"Adjacent to Rida Marquees /DHA Main Gate, GT Road Gujranwala Cantt"} ph={"Ph: 055-3884500 l ,055-3880400"}
-   img={"https://images-beta.tossdown.com/site/0df39a08-2dca-4998-adda-4ca66b1132cb.webp" } franch={"Village"}  />
+   img={"https://images-beta.tossdown.com/site/0df39a08-2dca-4998-adda-4ca66b1132cb.webp" }
+    franch={"Village"}  />
+    <div style={{ display: "flex", flexWrap: "wrap", gap: "20px",  width: "100%",    margin: "0 auto",  overFlow : "hidden" ,
+  justifyContent : "center" , alignItems : "center",
+}}>
+  {
+  Branches.map(({city,name}) =>{
+  return <Franches tittle={name}  city={city} />
+  })
+}
+</div>
     </>
   
   )

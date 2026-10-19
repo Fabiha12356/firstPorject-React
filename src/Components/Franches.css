@@ -1,0 +1,8 @@
+.franches-container{
+    display: flex !important;
+    flex-direction: column !important;
+    border: 4px solid purple;
+    width: 28% !important;
+    padding: 40px 40px !important;
+    gap: 10% !important;
+}
