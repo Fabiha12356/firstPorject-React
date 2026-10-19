@@ -18,61 +18,62 @@ const cardData = [
     website : "Salt'n Pepper Express",
     location: "Opposite Sargodha Arts Council Babar Road",
     phoneNo : "Ph: 042-111-100-678",
-    Images : ""
+    Images : "https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
   },
   { tittle : "Jhelum",
     website : "Salt'n Pepper Express",
     location: "Opposite Dancing Fountain Gallery 2 Citi Housing Jhelum,",
     phoneNo : "Ph: 0307-7675555",
-    Images : ""},
+    Images : "https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
+  },
   {
      tittle : "Faisal Town",
     website : "Salt'n Pepper Express",
     location: " 34-C Abul Hassan Isfahani Rd, Faisal Town,Lahore",
     phoneNo : "Ph: 042-111-100-678",
-    Images : ""
+    Images : "https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
   },
   {
      tittle : "DHA",
     website : "Salt'n Pepper Express",
     location: " 93-Y Phase III, DHA,Lahore",
     phoneNo : "Ph: 042-111-100-678",
-    Images : ""
+    Images : "https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
   },
   {
      tittle : "Bahria Town",
     website : "Salt'n Pepper Express",
     location: "  Arwa Heights Building 19 Nishtar Block, Sector E, Bahria Town Lahore",
     phoneNo : "Ph: 042-111-100-678",
-    Images : ""
+    Images : "https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
   },
   {
      tittle : "Gujar Khan",
     website : "Salt'n Pepper Express",
     location: " New Metro City Gujar Khan",
     phoneNo : "Ph: 0321-1114965",
-    Images : ""
+    Images : "https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
   },
   {
      tittle : "Lahore",
     website : "Salt'n Pepper Express",
     location: " Shop no.5, Arcade Block, Fortress Stadium, Lahore",
     phoneNo : "Ph: 042-366-23-100",
-    Images : ""
+    Images : "https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
   },
   {
      tittle : "Gujrat",
     website : "Salt'n Pepper Express",
     location: "  Service Mor, Gujrat",
     phoneNo : "Gujrat",
-    Images : ""
+    Images : "https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
   },
   {
      tittle : "Sahiwal",
     website : "Salt'n Pepper Express",
     location: "Opposite Main Gate Police Line, Sahiwal",
     phoneNo : "Ph: 040-4515485",
-    Images : ""
+    Images : "https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
   },
 ]
 
@@ -82,19 +83,22 @@ export const App = () => {
   <Navbaar/>
   <Carousal />
   <Cards />
-  <Hero  condition = {true}  />
-  <Hero  condition = {false} />
+  <Hero  condition = {true} name={"Faisalabad"} loc={"4-Kohinoor City, Faisalabad"}
+   ph={" Ph: 041-8711404"} img={"https://images-beta.tossdown.com/site/11771dbf-36a1-4684-a55e-18af61e0f77c.webp"}  franch={"Resturant"} />
+  <Hero  condition = {false} name={"Bahawalpur"} loc={" D.C Chowk, opposite Commissioner House, Bahawalpur"} ph={" Ph: 062-2740271-2"} img={"https://images-beta.tossdown.com/site/b2f78afe-11e4-4af5-8aef-cff9c2908614.webp"} />
 
 <div style={{ display: "flex", flexWrap: "wrap", gap: "20px",  width: "100%",    margin: "0 auto",  overFlow : "hidden" ,
   justifyContent : "center" , alignItems : "center",
 }}>
   {
-  cardData.map(({tittle,website,location,phoneNo}) =>{
-  return <WrapCrads tittle={tittle} web={website} loc={location} ph={phoneNo} />
+  cardData.map(({tittle,website,location,phoneNo,Images}) =>{
+  return <WrapCrads tittle={tittle} web={website} loc={location} ph={phoneNo} img ={Images} />
   })
 }
 </div>
-
+ <Hero  condition = {true} name={"GUJRANWALA"}
+  loc={"Adjacent to Rida Marquees /DHA Main Gate, GT Road Gujranwala Cantt"} ph={"Ph: 055-3884500 l ,055-3880400"}
+   img={"https://images-beta.tossdown.com/site/0df39a08-2dca-4998-adda-4ca66b1132cb.webp" } franch={"Village"}  />
     </>
   
   )
